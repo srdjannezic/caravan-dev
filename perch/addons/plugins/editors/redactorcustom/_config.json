@@ -1,0 +1,10 @@
+{
+	"js": [
+		"PERCH_LOGINPATH/addons/plugins/editors/redactorcustom/redactor.min.js",
+		"PERCH_LOGINPATH/addons/plugins/editors/redactorcustom/perch/config.js"
+	],
+	"css": [
+		"PERCH_LOGINPATH/addons/plugins/editors/redactorcustom/redactor.min.css",
+		"PERCH_LOGINPATH/addons/plugins/editors/redactorcustom/perch/edit.css"
+	]
+}

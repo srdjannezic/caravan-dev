@@ -1,0 +1,53 @@
+// Colors
+$gray-dark:                 #1f1f1f;
+$gray:                      #55595c !default;
+$gray-light:                #818a91 !default;
+$gray-lighter:              #eceeef !default;
+$gray-lightest:             white;
+
+// $pink:											#FF9C83;
+// $gold:											#FFC043; //#E9C065;
+// $brand-primary:             $pink;
+$green:											#00be95;
+$brand-primary:							$green;
+
+// Options
+$enable-rounded:            false;
+$enable-transitions:        true;
+
+// Body
+$body-bg:                   #fafafa;
+$body-color:								black;
+
+// Typography
+$font-family-sans-serif:			'TradeGothicLTStd', "Helvetica Neue", Helvetica, Arial, sans-serif !default;
+$font-family-serif:						"prestige-elite-std", Georgia, "Times New Roman", Times, serif !default;
+$headings-font-family:				$font-family-sans-serif;
+$font-family-base:						$font-family-sans-serif;
+
+$headings-color:							black;
+$headings-font-weight:				400;
+
+$font-size-h6: 0.8rem;
+
+$list-inline-padding:					15px;
+
+// Navbar
+$navbar-light-color:                black;
+$navbar-light-hover-color:          rgba(0,0,0,.6) !default;
+$navbar-light-active-color:         rgba(0,0,0,.8) !default;
+$navbar-light-disabled-color:       rgba(0,0,0,.15) !default;
+
+// Forms
+
+// Carousel
+// $carousel-indicator-active-bg:			$gold;
+// $carousel-caption-color:						white;
+// $carousel-text-shadow:							none;
+
+// Jumbotron
+$jumbotron-padding:									2rem !default;
+$jumbotron-bg:											transparent;
+
+// Legacy BS
+$font-size-root:							16px;

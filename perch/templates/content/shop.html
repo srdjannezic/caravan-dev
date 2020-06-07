@@ -1,0 +1,29 @@
+<div class="background">
+	<img data-src="<perch:content type="image" id="shop_image" label="Image" />" class="bg" alt="CARAVAN Shop">
+</div>
+<a href="<perch:content type="text" id="shop_url" label="Shop URL" size="m" />" class="promo"  style="background-image:url(<perch:content type="image" id="promo_background" label="Promo background image" />);">
+	<div>
+		<span class="title"><perch:content type="smarttext" id="shop_promo_text" label="Promo text" size="xl" /></span>
+		<span class="cta"><perch:content type="text" id="shop_promo_cta" label="Promo call to action" size="m" /></span>
+	</div>
+</a>
+<div class="serving">
+	<perch:repeater id="shop_slider" label="Carousel Slides">
+	<perch:before><div class="owl-carousel"></perch:before>
+		<div class="item">
+			<div class="full-width">
+				<header class="w50">
+					<h5><perch:content type="text" id="caption" label="Caption" size="m" /></h5>
+					<h3><perch:content type="text" id="title" label="Title" size="m" /> <span><perch:content type="text" id="subtitle" label="Subtitle" size="m" /></span></h3>
+				</header>
+				<div class="w50">
+					<p>
+						<perch:content type="smarttext" id="blurb" label="Blurb" size="xl" />
+						<br><a href="<perch:content type="text" id="url" label="URL" size="l" />"><perch:content type="text" id="cta" label="CTA Text" size="s" /></a>
+					</p>
+				</div>
+			</div>
+		</div>
+	<perch:after></div></perch:after>
+	</perch:repeater>
+</div>

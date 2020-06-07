@@ -1,0 +1,68 @@
+<perch:form id="contact" method="post" app="perch_forms" class="col-xs-12 col-md-10 offset-md-1 col-lg-6 offset-lg-3 m-t-3 m-b-3">
+
+	<perch:content id="intro" type="textarea" label="Form intro" html="true" editor="redactor" size="m" />
+	
+	<div class="form-group">
+		<perch:label for="name">Name *</perch:label>
+		<perch:input type="text" id="name" required="true" label="Name" class="form-control" />
+		<perch:error for="name" type="required">Please add your name</perch:error>
+	</div>
+	<div class="form-group">
+		<perch:label for="email">Email *</perch:label>
+		<perch:input type="email" id="email" required="true" label="Email" placeholder="you@company.com" class="form-control" />
+		<perch:error for="email" type="required">Please add your email address</perch:error>
+		<perch:error for="email" type="format">Please check your email address</perch:error>
+	</div>
+	<div class="form-group">
+		<perch:label for="telephone">Contact number *</perch:label>
+		<perch:input type="text" id="telephone" required="true" label="Contact number" class="form-control" />
+		<perch:error for="telephone" type="required">Please add your contact number</perch:error>
+	</div>
+	<div class="form-group">
+		<perch:label for="businessname">Business name *</perch:label>
+		<perch:input type="text" id="businessname" required="true" label="Business name" class="form-control" />
+		<perch:error for="businessname" type="required">Please add your business name</perch:error>
+	</div>
+	<div class="form-group">
+		<perch:label for="address">Address *</perch:label>
+		<perch:input type="textarea" id="address" required="true" label="Address" class="form-control" />
+		<perch:error for="address" type="required">Please add the business address</perch:error>
+	</div>
+	<div class="form-group">
+		<perch:label for="currentsupplier">Who is your current coffee supplier? *</perch:label>
+		<perch:input type="text" id="currentsupplier" required="true" label="Current supplier" class="form-control" />
+		<perch:error for="currentsupplier" type="required">Please add your current supplier</perch:error>
+	</div>
+	<div class="form-group">
+		<perch:label for="businesstype">Type of business *</perch:label>
+		<perch:input type="select" id="businesstype" required="true" label="Business type" class="form-control" options="Café,Restaurant,Pub,Office,Other" />
+		<perch:error for="businesstype" type="required">Please select the type of business</perch:error>
+	</div>
+	<div class="form-group">
+		<perch:label for="machinery">Please list the machinery that you need/already have? *</perch:label>
+		<perch:input type="textarea" id="machinery" required="true" label="Machinery" class="form-control" />
+		<perch:error for="machinery" type="required">Please add the machinery that you need/have.</perch:error>
+	</div>
+	<div class="form-group">
+		<perch:label for="triedbefore">Have you tried our coffee before? *</perch:label>
+		<perch:input type="select" id="businesstype" label="Business type" class="form-control" options="Yes,No" />
+	</div>
+	<div class="form-group">
+		<perch:label for="triedbeforelocation">If so, where?</perch:label>
+		<perch:input type="text" id="triedbeforelocation" label="Tried before at" class="form-control" />
+	</div>
+	<div class="form-group">
+		<perch:label for="anythingelse">Is there anything else you would like to tell us about your business?</perch:label>
+		<perch:input type="textarea" id="anythingelse" label="Anything else" class="form-control" />
+	</div>
+	<div>
+		<perch:input type="submit" id="submit" value="Send" class="btn btn-primary btn-block" />
+	</div>
+	
+	<perch:success>
+		<div class="alert alert-success" role="alert">
+		<perch:content id="success" type="textarea" label="Thank you message" html="true" editor="redactor" />
+		</div>
+	</perch:success>
+
+</perch:form>

@@ -1,0 +1,30 @@
+<?php
+	include( 'perch/runtime.php' );
+	PerchSystem::force_ssl();
+	perch_content_create( 'Lead images', [
+		'template'		=> 'image.html',
+		'multiple'		=> true,
+		'edit-mode'		=> 'singlepage',
+		'searchable'	=> false
+	] );
+	perch_content_create( 'About images', [
+		'template'		=> 'image.html',
+		'multiple'		=> true,
+		'edit-mode'		=> 'singlepage',
+		'searchable'	=> false
+	] );
+	perch_content_create( 'Image Carousel', [
+		'template'		=> 'carousel.html',
+		'multiple'		=> true,
+		'edit-mode'		=> 'singlepage',
+		'searchable'	=> false
+	] );
+	perch_layout( 'global.header', [
+		'body-class'	=> 'restaurant bankside'	
+	] );
+	perch_layout( 'page.restaurant', [
+		'slug'					=> 'bankside',
+		'title'					=> 'CARAVAN  Bankside',
+		'dmn-id'				=> '57da6135e947447b77763d4d'
+	] );
+	perch_layout( 'global.footer' );

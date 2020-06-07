@@ -1,0 +1,10 @@
+<perch:if id="enable" value="announcement">
+	<section class="section-<perch:content id="enable" type="checkbox" label="Show announcement?" value="announcement" /> full-width">
+		<div class="w50">
+			<img src="<perch:content type="image" id="image" label="Image" />" alt="<perch:content type="text" id="alt" label="Image ALT Text" help="e.g. Photo of MD John Smith with his best wig on" title="true" />">
+		</div>
+		<article class="w50">
+			<perch:content id="text" type="textarea" label="Text" html="true" editor="redactorcustom" imagewidth="640" imageheight="480" />
+		</article>			
+	</section>
+</perch:if>

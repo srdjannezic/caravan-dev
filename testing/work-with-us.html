@@ -1,0 +1,27 @@
+<?php
+	include( 'perch/runtime.php' );
+	PerchSystem::force_ssl();
+	perch_layout( 'global.header', [
+		'body-class'	=> 'work-with-us'	
+	] );
+?>
+		<nav class="navbar navbar-fixed-top navbar-light">
+			<a class="navbar-brand" href="./"><?php perch_layout_var( 'title' ); ?></a>
+			<ul class="nav navbar-nav navbar-center">
+				<li class="nav-item"><a href="#intro" class="nav-link scroll">Join us</a></li>
+				<li class="nav-item"><a href="./" class="nav-link link-locations">All Locations</a></li>
+			</ul>
+		</nav>
+
+		<?php perch_content( 'Banner' ); ?>
+
+		<section class="section-careers container" id="intro">
+			<header class="text-xs-center">
+				<?php perch_content( 'Intro' ); ?>
+			</header>
+			<div class="row">
+				<?php perch_content( 'Jobs' ); ?>
+			</div>
+		</section>
+
+<?php perch_layout( 'global.footer' ); ?>

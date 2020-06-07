@@ -1,0 +1,8 @@
+<div class="col-xs-12 col-md-8<perch:if exists="perch_item_odd"> offset-md-4</perch:if>">
+	<h3>
+		<perch:if exists="location"><small><perch:content id="location" type="text" label="Location" required="false" /></small></perch:if>
+		<perch:content id="title" type="text" size="xl" label="Job title" title="true" html="true" />
+	</h3>
+	<perch:content id="description" type="textarea" label="Job description" html="true" editor="redactor" />
+	<a href="<perch:content id="link" type="text" label="More info link" required="false" />" class="more-info">More info</a>
+</div>

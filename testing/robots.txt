@@ -1,0 +1,3 @@
+User-agent: *
+Disallow: /perch/
+Sitemap: http://www.caravanrestaurants.co.uk/sitemap.xml

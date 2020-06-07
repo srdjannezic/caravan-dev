@@ -1,0 +1,30 @@
+<?php
+	include( 'perch/runtime.php' );
+	PerchSystem::force_ssl();
+	perch_content_create( 'Lead images', [
+		'template'		=> 'image.html',
+		'multiple'		=> true,
+		'edit-mode'		=> 'singlepage',
+		'searchable'	=> false
+	] );
+	perch_content_create( 'About images', [
+		'template'		=> 'image.html',
+		'multiple'		=> true,
+		'edit-mode'		=> 'singlepage',
+		'searchable'	=> false
+	] );
+	perch_content_create( 'Image Carousel', [
+		'template'		=> 'carousel.html',
+		'multiple'		=> true,
+		'edit-mode'		=> 'singlepage',
+		'searchable'	=> false
+	] );
+	perch_layout( 'global.header', [
+		'body-class'	=> 'restaurant kings-cross'	
+	] );
+	perch_layout( 'page.restaurant', [
+		'slug'					=> 'kings-cross',
+		'title'					=> 'CARAVAN  King\'s Cross',
+		'opentable-id'	=> 91194
+	] );
+	perch_layout( 'global.footer' );

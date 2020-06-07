@@ -1,0 +1,18 @@
+<?php
+	include( 'perch/runtime.php' );
+	PerchSystem::force_ssl();
+	perch_content_create( 'Lead images', [
+		'template'		=> 'image.html',
+		'multiple'		=> true,
+		'edit-mode'		=> 'singlepage',
+		'searchable'	=> false
+	] );
+	perch_layout( 'global.header', [
+		'body-class'	=> 'restaurant fitzrovia'	
+	] );
+	perch_layout( 'page.holding', [
+		'slug'					=> 'fitzrovia',
+		'title'					=> 'CARAVAN  Fitzrovia | Coming soon',
+		'dmn-id'				=> ''
+	] );
+	perch_layout( 'global.footer' );

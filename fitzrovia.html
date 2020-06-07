@@ -1,0 +1,30 @@
+<?php
+	include( 'perch/runtime.php' );
+	PerchSystem::force_ssl();
+	perch_content_create( 'Lead images', [
+		'template'		=> 'image.html',
+		'multiple'		=> true,
+		'edit-mode'		=> 'singlepage',
+		'searchable'	=> false
+	] );
+	perch_content_create( 'About images', [
+		'template'		=> 'image.html',
+		'multiple'		=> true,
+		'edit-mode'		=> 'singlepage',
+		'searchable'	=> false
+	] );
+	perch_content_create( 'Image Carousel', [
+		'template'		=> 'carousel.html',
+		'multiple'		=> true,
+		'edit-mode'		=> 'singlepage',
+		'searchable'	=> false
+	] );
+	perch_layout( 'global.header', [
+		'body-class'	=> 'restaurant fitzrovia'	
+	] );
+	perch_layout( 'page.restaurant', [
+		'slug'					=> 'fitzrovia',
+		'title'					=> 'CARAVAN Fitzrovia',
+		'dmn-id'				=> '5b155666c344fd26835de046'
+	] );
+	perch_layout( 'global.footer' );

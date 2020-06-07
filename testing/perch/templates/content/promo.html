@@ -1,0 +1,5 @@
+<a href="<perch:content id="url" type="text" label="URL" />" class="promo <perch:content id="class" type="text" size="m" label="CSS class" />" style="background-image:url(<perch:content type="image" id="background" label="Background image" />);" target="_blank">
+	<perch:if id="class" match="contains" value="shop"><span class="logo">Shop</span></perch:if>
+	<span class="title"><perch:content id="title" type="text" size="xl" label="Title" title="true" html="true" /></span>
+	<span class="cta"><perch:content id="cta" type="text" size="m" label="Call to action text" /></span>
+</a>
